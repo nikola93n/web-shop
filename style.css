@@ -1,0 +1,124 @@
+:root {
+    --primary: #2080be;
+    --secondary: #ef7e22;
+    --accents: #bad232;
+    --text: #333;
+    --white: #fff;
+    --gray: gray;
+    --font: 16px;
+    --transition: .3s linear;
+}
+/********************
+basics styles
+ *******************/
+body {
+    font-size: --font;
+    color: var(--text);
+}
+a {
+    transition: var(--transition);
+    text-decoration: none;
+}
+/********************
+topbar
+ *******************/
+.topbar div {
+    font-size: .9rem;
+}
+.topbar a {
+    color: var(--accents);    
+}
+.topbar a:hover {
+    color: var(--primary);
+}
+/********************
+navbar
+ *******************/
+.navbar-brand img {
+    width: 80px;
+}
+nav {
+    border-bottom: 5px solid var(--accents);
+}
+.carousel-caption {
+    bottom: 10rem;
+}
+.carousel-item h2 span {
+    color: var(--accents);
+}
+.carousel-item h2 {
+    line-height: 1;
+}
+.button {
+    background: var(--accents);
+    padding: 10px 30px;
+    color: var(--text);
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.button:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+/********************
+Products
+*******************/
+.products h5:last-child {
+    color: var(--accents);
+    font-weight: bold;
+}
+.products .holder {
+    overflow: hidden;
+}
+.products img {
+    transition: var(--transition);
+}
+.products img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+.about i {
+    color: var(--accents);
+    text-shadow: 0 0 1px var(--text);
+}
+.about .border-dark {
+    transition: var(--transition);
+}
+.about .border-dark:hover {
+    background: var(--text);
+    color: var(--white)
+}
+
+/********************
+about
+*******************/
+.discoverOff {
+    background-image: url(img/shop.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+/********************
+footer
+*******************/
+footer a {
+    color: var(--accents);
+    font-weight: lighter;    
+}
+footer a:hover {
+    color: var(--white);
+}
+
+
+
+/********************
+R E S P O N S I V E 
+ *******************/
+@media (max-width: 768px) {
+    .topbar {
+        display: none;
+    }
+    /* .products .col-md-4 {
+        margin-bottom: 25px;
+    } */
+}
